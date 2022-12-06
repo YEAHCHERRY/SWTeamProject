@@ -1,9 +1,8 @@
 # SWTeamProject
-----------------------------
 ## FrontEnd
 
 
-----------------------------
+
 ## Deep Learning
 ### 1. Data Crawling
 rocket_crawling.py: 약 10,000건의 데이터 크롤링 가능
