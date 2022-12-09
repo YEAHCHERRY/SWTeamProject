@@ -13,7 +13,7 @@ IT side project를 위한 팀 매칭 서비스
 
 ## Process 
 ### 1. Data Crawling  
-letspl_crawling.py: 렛플에서 39건의 모집글 데이터 크롤링
+letspl_crawling.py: 렛플에서 39건의 모집글 데이터 크롤링  
 rocket_crawling.py: 로켓펀치에서 약 10,000건의 이력서 데이터 크롤링  
 ### Environment 
 * python3  
