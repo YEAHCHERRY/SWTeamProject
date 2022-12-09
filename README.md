@@ -15,7 +15,6 @@ IT side project를 위한 팀 매칭 서비스
 ### 1. Data Crawling  
 rocket_crawling.py: 로켓펀치에서 약 10,000건의 이력서 데이터 크롤링 가능  
 ### Environment 
-* Window10  
 * python3  
 * selenium (Install selenium: ```pip install selenium```)
 * chrome 108.0.5359.94 ver. with ChromeDriver108.0.5359.71  
@@ -25,6 +24,4 @@ rocket_crawling.py: 로켓펀치에서 약 10,000건의 이력서 데이터 크�
 
 ### 2. DL Model  
 ### Environment  
-* Linux  
-* jupyter notebook
 * koBERT
