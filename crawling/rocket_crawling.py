@@ -71,21 +71,15 @@ def profile_crawl(j):
     file = open(fileName, 'a', encoding='utf-8')
     file.write(name + "`" + interest + "`" + intro + "`" + car + "`" + proj + "`" + field + "\n")
     file.close()
-
-    # # pandas에 작성
-    # interest = interest+'이 있습니다.'
-    # car = '경력은 '+car+' 을 해봤습니다.'
-    # proj = '프로젝트는 '+proj+' 을 해봤습니다.'
-    # field = field+' 분야에서 활동합니다.'
-
+    
 
 ###################### main함수 ######################
-fileName = 'Rocket_profile.csv'
+fileName = 'rocket_profile.csv'
 file = open(fileName, 'w', encoding='utf-8')
-file.write("관심분야`소개`경력`프로젝트`활동분야\n")
+file.write("이름`관심분야`소개`경력`프로젝트`활동분야\n")
 file.close()
 
-file = open('RocketPunch_IDPW.txt', 'r', encoding='utf-8')
+file = open('C:/Users/dnflc/Desktop/ITProject_DL/RocketPunch_IDPW.txt', 'r', encoding='utf-8')
 ID = file.readline()
 PW = file.readline()
 
@@ -138,7 +132,6 @@ while True: # 페이지별 루프
     else:
         WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, '#search-results > div.ui.blank.right.floated.segment > div > div.tablet.computer.large.screen.widescreen.only > a:nth-child(6)')))
         next_btn = driver.find_element(By.CSS_SELECTOR, '#search-results > div.ui.blank.right.floated.segment > div > div.tablet.computer.large.screen.widescreen.only > a:nth-child(6)')
-    print(next_btn.get_attribute("innerText"))
     driver.execute_script("arguments[0].click();", next_btn)
     time.sleep(4)
 
