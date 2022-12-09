@@ -13,14 +13,14 @@ IT side project를 위한 팀 매칭 서비스
 
 ## Process 
 ### 1. Data Crawling  
-rocket_crawling.py: 로켓펀치에서 약 10,000건의 이력서 데이터 크롤링 가능  
+letspl_crawling.py: 렛플에서 39건의 모집글 데이터 크롤링
+rocket_crawling.py: 로켓펀치에서 약 10,000건의 이력서 데이터 크롤링  
 ### Environment 
 * python3  
 * selenium (Install selenium: ```pip install selenium```)
 * chrome 108.0.5359.94 ver. with ChromeDriver108.0.5359.71  
 (Download: https://chromedriver.chromium.org/downloads)
 * 기타 설정 : 로켓펀치 ID, PW 작성한 2 lines txt file (RocketPunch_IDPW.txt), code내 chrome driver 경로 설정  
-
 
 ### 2. DL Model  
 ### Environment  
