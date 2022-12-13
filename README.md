@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #IT PROJECT(YEAHCHERRY)
 =======
 # SWTeamProject
@@ -28,4 +27,3 @@ rocket_crawling.py: 로켓펀치에서 약 10,000건의 이력서 데이터 크�
 ### 2. DL Model  
 ### Environment  
 * koBERT
->>>>>>> 3a963b09d02b33252178210d41718099a8f3c9fd
