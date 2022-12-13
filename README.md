@@ -9,7 +9,7 @@ IT side project를 위한 팀 매칭 서비스
 2. signin 로그인 페이지 index.html, signin.css, signin.js 작성
 3. main, signin 공통으로 적용되는 css는 common.css에서 관리
 4. main, signin 공통으로 적용되는 js는 common.js에서 관리
-5. main, signin 페이지 연결 -> main 페이지 상단의 Sign In 클릭하면 sinin 페이지로 전환
+5. main, signin 페이지 연결 -> main 페이지 상단의 메뉴에서 Sign In 클릭하면 sinin 페이지로 전환
 <br />
 
 
