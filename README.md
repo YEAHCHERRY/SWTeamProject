@@ -7,6 +7,9 @@ IT side project를 위한 팀 매칭 서비스
  ###   Environment 
  - Node.js(v.18.12.1)
  - Npm(8.19.2)
+ ### 디자인 리소스
+ - Icon : Google Material Icons
+ - UI 디자인 시안 : Adobe XD
 
 
 
