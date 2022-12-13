@@ -5,8 +5,8 @@ IT side project를 위한 팀 매칭 서비스
 ## 📍Front-End
 IT side project 매칭 Web App 구현
 <br />
-## 1.개발환경 : Node.js
-## 2.Process
+#### -개발환경 : Node.js
+#### -Process
  1. main 페이지 index.html, main.css, main.js 작성
  2. signin 로그인 페이지 index.html, signin.css, signin.js 작성
  3.  3. main, signin 공통으로 적용되는 css는 common.css에서 관리
