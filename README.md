@@ -1,5 +1,5 @@
-#IT PROJECT(YEAHCHERRY)
-=======
+# IT PROJECT(YEAHCHERRY)
+
 # SWTeamProject
 IT side project를 위한 팀 매칭 서비스  
 <br></br>
