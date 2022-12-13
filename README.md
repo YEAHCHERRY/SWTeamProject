@@ -3,7 +3,6 @@
 IT side project를 위한 팀 매칭 서비스  
 ## 📍Front-End
  IT side project 매칭 Web App 구현
-IT side project 매칭 Web App 구현
  ### 개발환경 : Node.js
  ### Process
  1. main 페이지 index.html, main.css, main.js 작성
