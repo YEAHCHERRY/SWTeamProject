@@ -3,7 +3,7 @@
 IT side project를 위한 팀 매칭 서비스
 <br />
 ## 📍Front-End
-  IT side project 매칭 Web App 구현 
+  프로젝트 팀 매칭 Web App 구현 
  ###   Environment 
  - Node.js(v.18.12.1)
  - Npm(8.19.2)
@@ -12,6 +12,7 @@ IT side project를 위한 팀 매칭 서비스
  - UI 디자인 시안 : Adobe XD
 
 
+<br>
 
 ## 📍Deep Learning
 * 팀 매칭 기능 구현 방식 (사용자가 팀원 모집글 업로드시)
