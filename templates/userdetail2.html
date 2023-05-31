@@ -1,0 +1,399 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- 스타일 초기화 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Jua&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@200;400&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- 구글 폰트 주아 -->
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Merriweather:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
+    <!-- 구글 폰트 나눔펫 -->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+     <!-- Google Material Icons -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+     <style>
+         body {
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+        .inner {
+            /* 가운데정렬 */
+            width: 1100px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .btn {
+            width: 130px;
+            padding: 10px;
+            border: 2px solid #333;
+            border-radius: 4px;
+            color: #333;
+            font-size: 16px;
+            font-weight: 700;
+            text-align: center;
+            cursor: pointer;
+            box-sizing: border-box;
+            display: block;
+            transition: .4s;
+            background-color: rgba(255, 255, 255, .5);
+
+        }
+        .btn:hover{
+            background-color: #333;
+            color: #fff;
+        }
+        .btn.btn--brown {
+            color: #592B18;
+            border-color: #592B18;
+        }
+        .btn.btn--brown:hover{
+            color: #fff;
+            background-color: #592B18;
+
+        }
+
+
+        /* HEADER */
+        header {
+            background-color: #f6f5f0;
+            border-bottom: 1px solid #fffffff2;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            height: 120px;
+            z-index: 5;
+        }
+        header > .inner {
+            height: 120px;
+        }
+        header .logo {
+            position: absolute;
+            height: 50px;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto 0;
+        }
+        header .sub-menu {
+            display: flex;
+            position: absolute;
+            top: 15px;
+            right: 0;
+            margin-right: 10px;
+        }
+        header .sub-menu .menu {
+            display: flex;
+        }
+        header .sub-menu .menu li{
+            /* margin-right: px; */
+            font-size: 17px;
+           font-family: 'Hahmlet', serif;
+        }
+        header .sub-menu .menu li a{
+            font-size: 12px;
+            padding: 11px 16px;
+            display: block;
+            color: #656565;
+            text-decoration: none;
+        }
+        header .sub-menu .menu li a:hover{
+            color: #000;
+        }
+
+        header .sub-menu .search {
+            height: 34px;
+            position: relative;
+        }
+        header .sub-menu .search input {
+            width: 36px;
+            height: 34px;
+            padding: 4px 10px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            border-radius: 5px;
+            outline: none;
+            background-color: #fff;
+            color: #000;
+            font-size: 12px;
+            transition: width .4s;
+        }
+        header .sub-menu .search input:focus {
+            width: 190px;
+            border-color: #690;
+        }
+        header .sub-menu .search .material-icons {
+            height: 24px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 5px;
+            margin: auto;
+
+
+        }
+        header .main-menu {
+            display: flex;
+            position: absolute;
+            right: -10px;
+            top: 50px;
+        }
+        header .main-menu li {
+            padding: 16px 12px;
+
+        }
+        header .main-menu li a {
+            font-size:20px;
+            color: #656565;
+            text-decoration: none;
+            margin-right: 15px;
+             font-family: 'Hahmlet', serif;
+            
+        }
+        header .main-menu li a:hover {
+            color: #690;
+        }
+        header  a.btn {
+            width: 83px;
+            padding: 8px;
+            border: 2px solid #656565;
+            border-radius: 4px;
+            font-size: 15px;
+            font-weight: 700;
+            color: #656565;
+            text-decoration: none;
+            text-align: center;
+            position: absolute;
+            right: 0;
+            top: 39px;
+            background-color: #fffffff2;
+
+        }
+        ul, li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .content{
+            background-image: url('https://proxy.goorm.io/service/63f4778f714461ebde4f616b_dlDnKi4ie02yXT3PDrp.run.goorm.io/9080/file/load/background.jpg?path=d29ya3NwYWNlJTJGeWVhaGNoZXJyeSUyRnRlbXBsYXRlcyUyRmJhY2tncm91bmQuanBn&docker_id=dlDnKi4ie02yXT3PDrp&secure_session_id=WayrNU6N9KM6mx5kEolqigns8T-6ud3I'); 
+            background-size: cover;
+            padding:100px 0 ;
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content .detail{
+            background-color: white;
+            width: 700px;
+            padding: 100px 0;
+            border: 1px solid #272772;
+            border-radius: 14px;
+            font-family: 'Hahmlet', serif;
+            font-weight: 600;
+        }
+        .content .title{
+            display: flex;
+            justify-content: center;
+        
+        }
+        .content .detail{
+            display: flex;
+            align-items: left;
+            flex-direction: column;
+            justify-content: center;
+            padding: 30px;
+        }
+        .detail .subject{
+            margin-bottom: 10px; 
+            font-family: 'Hahmlet', serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: #690;
+            margin-bottom: 15px;
+        }
+        .content h1{
+            font-size: 20px;
+        }
+        .content .platform{
+            display: flex;
+        }
+        .content .platform .stack {
+            font-family: 'Jua';
+        }
+        .detail .explain{
+            width: 600px;
+            /* height: 50px; */
+            font-family: 'Hahmlet', serif;
+            margin-bottom: 30px;
+            font-size: 14px;
+            border: 1px solid #656565;
+            border-radius: 5px;
+            padding: 20px;
+            line-height:22px;
+        }
+        .detail .text_bottom{
+            margin-bottom: 30px;
+        }
+        .detail .text_bottom ul li {
+            display: flex;
+            color: #272772;
+            justify-content: center;
+        }
+         
+        .detail .color{
+            color:#12887A;
+            font-weight:800;
+        }
+      
+     </style>
+</head>
+<body>
+    
+    {% if not session['id'] %}
+    <!-- HEADER -->
+    <header>
+        <div class="inner">
+
+            <a href="/" class="logo">
+                <img src="https://blog.kakaocdn.net/dn/bMcSCm/btsgnXHrIEp/KcKSB4NAqcHNkJObaHGFDK/img.png" alt="">
+            </a>
+
+            <div class="sub-menu">
+                <ul class="menu">
+                    <li>
+                        <a href="./sign-in">Sign In</a>
+                    </li>
+                    
+                </ul>
+                <div class="search">
+                    <input type="text" >
+                    <div class="material-icons">search</div>
+                </div><script defer src="/__/firebase/8.6.5/firebase-storage.js"></script>
+            </div>
+
+            <ul class="main-menu">
+                <li>
+                    <a href="newproject">프로젝트 등록</a>
+                </li>
+                <li>
+                   <a href="uploadpdf">이력서 등록</a> 
+                </li>
+               
+            </ul>
+            
+             <!-- {% if session['id']%}
+        <div class="user">
+            <img src="https://i.ibb.co/4NJ6F0t/user.png" alt="user" border="0">
+            <p>{{session['id']}}</p>
+        </div>
+            {% else%}
+  
+        {% endif %}
+            
+        {% if session['id'] %}
+            <button type="button" onclick="location.href = '/logout'" style="float: right; border-radius:10px">&nbsp로그아웃&nbsp</button>
+            {% endif %}  -->
+     </div>
+
+    </header>
+    {% endif %}
+
+
+    
+    {% if session['id'] %}
+          <header>
+            <div class="inner">
+
+                <a href="/" class="logo">
+                    <img src="https://blog.kakaocdn.net/dn/bMcSCm/btsgnXHrIEp/KcKSB4NAqcHNkJObaHGFDK/img.png" alt="">
+                </a>
+
+                <div class="sub-menu">
+                    <ul class="menu">
+                        <li>
+                            <a href="#">
+                                <span class="material-symbols-outlined">'{{session['id']}}' 님</span>
+                            </a>
+                        </li>
+                        
+                           <button type="button" onclick="location.href = '/logout'" style="margin-right:10px; border-radius:10px;">&nbsp로그아웃&nbsp</button>
+                        <li>
+                            <div class="search">
+                                <input type="text" >
+                                <div class="material-icons">search</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="main-menu">
+                    <li>
+                        <a href="newproject">프로젝트 등록</a>
+                    </li>
+                   
+                    <li>
+                        <a href="uploadpdf">이력서 등록</a>
+                    </li>
+                 
+                </ul>
+
+            </div>
+        </header>
+    {% endif %}
+    
+    <div class = "content" >
+        <div class="detail">
+            <p style="margin-bottom: 5px;">이름 : 박진산</p>
+            <p class="subject" ></p>
+            <div style="margin-bottom: 30px; " class="platform">
+                <p>기술스택 :</p>
+                <p class="stack" style="color:#690">&nbsp;HTML React Typescript</p>
+            </div>
+            <div style="margin-bottom: 8px;" class="platform">
+                <p style="margin-bottom: 5px;" class="color">자기소개</p>
+
+            </div>
+            <p class="explain">
+                애니메이션 플랫폼을 개발하는 프로젝트에서 웹/모바일 프론트엔드를 담당 개발 하였습니다. 주 기술은 React이며 기존 프로젝트에서 Next,js, Mobx를 통해 서버사이드 랜더링을 구현 개발하였습니다.
+
+
+            </p>
+
+            <p style="margin-bottom: 10px; " class="color">프로젝트 경력</p>
+            <p class="explain">
+             11년 6개월) 서버 개발자 (주)라프텔(Laftel Inc.)  2018년 8월 - 현재 | 4년 5개월  애니메이션 스트리밍 서비스 백엔드 개발 서버/웹 개발자 에잇퍼센트(8PERCENT)  2017년 8월 - 2018년 6월 | 11개월  8퍼센트 웹서비스 및 웹 API 개발 일본사업 카카오엔터테인먼트(Kakao Entertainment)  2011년 7월 - 2016년 7월 | 5년 1개월  카카오페이지 서비스 운영, CRM, 일본사업지원 일본어 통번역 삼성전자(Samsung Electronics)  2009년 7월 - 2010년 7월 | 1년 1개월  무선사업부 기술회의 일본어 통역``활동 분야 Python +2 Django +1 HTML5 CSS3 JavaScript
+
+            </p>
+
+            <p style="margin-bottom: 10px;" class="color">앞으로 하고 싶은 기술, 관심분야</p>
+            <p class="explain">
+                저는SW 개발 분야의 React, Android Studio, mpandroidchart에 관심이 있습니다.
+				활동 분야 React Android Studio mpandroidchart retrofit2 Xamarin C# 입니다.문화생활 관련된 활동을 해보고 싶습니다.
+            </p>
+	
+	    </div>
+    </div>
+
+    
+  </body>
+</html>
