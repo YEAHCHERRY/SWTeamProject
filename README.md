@@ -12,18 +12,20 @@ IT side project를 위한 팀 매칭 서비스
  ### 디자인 리소스
  - Icon : Google Material Icons
  - UI 디자인 시안 : Adobe XD
+ - Fonts : Google Fonts (Jua, Gugi, Black-Hans)
  ### 화면 구현 및 시나리오
  - 메인화면
- ![image](https://github.com/YEAHCHERRY/SWTeamProject/assets/114209093/16ae5019-5cd4-4544-b9fa-cd2256b2063d)
+  ![image](https://github.com/YEAHCHERRY/SWTeamProject/assets/114209093/16ae5019-5cd4-4544-b9fa-cd2256b2063d)
  - 로그인 / 회원가입
- ![image](https://github.com/YEAHCHERRY/SWTeamProject/assets/114209093/4c21cc18-4f3d-4501-a5a2-91a947a2f591)
- ![image](https://github.com/YEAHCHERRY/SWTeamProject/assets/114209093/7fd009f1-22b4-4a5b-982f-f9c3a8073388)
+  ![image](https://github.com/YEAHCHERRY/SWTeamProject/assets/114209093/4c21cc18-4f3d-4501-a5a2-91a947a2f591)
+  ![image](https://github.com/YEAHCHERRY/SWTeamProject/assets/114209093/7fd009f1-22b4-4a5b-982f-f9c3a8073388)
  - 프로젝트 등록
- ![image](https://github.com/YEAHCHERRY/SWTeamProject/assets/114209093/0364e802-35c6-450d-b0df-a51e4da36421)
+  ![image](https://github.com/YEAHCHERRY/SWTeamProject/assets/114209093/0364e802-35c6-450d-b0df-a51e4da36421)
  - 프로젝트 등록 후 팀원 매칭
- ![image](https://github.com/YEAHCHERRY/SWTeamProject/assets/114209093/f0b4865e-7848-49d1-884a-011d717ecad0)
+  ![image](https://github.com/YEAHCHERRY/SWTeamProject/assets/114209093/f0b4865e-7848-49d1-884a-011d717ecad0)
  - 팀원 이력서 확인 -> 수락시 최종매칭 완료
- ![image](https://github.com/YEAHCHERRY/SWTeamProject/assets/114209093/3b62e092-a940-4604-a7ee-6a12ce881370)
+  ![image](https://github.com/YEAHCHERRY/SWTeamProject/assets/114209093/68abc5f6-fcd3-4876-a74c-374cf786bd0f)
+
  
 
 
