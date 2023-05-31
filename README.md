@@ -13,7 +13,12 @@ IT side project를 위한 팀 매칭 서비스: SIDE:)AFFECT
  - Icon : Google Material Icons
  - UI 디자인 시안 : Adobe XD
  ### 화면 구현
- 
+ - 메인화면
+ ![image](https://github.com/YEAHCHERRY/SWTeamProject/assets/114209093/16ae5019-5cd4-4544-b9fa-cd2256b2063d)
+ - 로그인 / 회원가입
+ ![image](https://github.com/YEAHCHERRY/SWTeamProject/assets/114209093/4c21cc18-4f3d-4501-a5a2-91a947a2f591)
+ ![image](https://github.com/YEAHCHERRY/SWTeamProject/assets/114209093/7fd009f1-22b4-4a5b-982f-f9c3a8073388)
+
 
 
 ## 📍 Backend
