@@ -524,39 +524,7 @@
                  
                 </select>
             </div>
-            
-             <!-- <label for="" style="margin-bottom:10px" class="title">* 팀 구성원</label>
-                <div class="row g-3 list">
-                  
-                    <div class="col-md-6">
-                        <label>프론트엔드</label>
-                        <select class="form-select js-choice"name="" id="">
-                            <option value="">프론트엔드 인원을 선택하세요.</option>
-                            <option>1명</option>
-                            <option>2명</option>
-                            <option>3명</option>
-                        </select>
-                    </div>
-                   
-                    <div class="col-md-6">
-                        <label>백엔드</label>
-                        <select class="form-select js-choice"name="" id="">
-                            <option value="">백엔드 인원을 선택하세요.</option>
-                            <option>1명</option>
-                            <option>2명</option>
-                            <option>3명</option>
-                        </select>
-                    </div>
-                    <div class="col-md-12">
-                        <label>그 외 구성원</label>
-                        <select class="form-select js-choice"name="" id="">
-                            <option value="">AI</option>
-                            <option>데이터분석</option>
-                            <option>디자이너</option>
-                         
-                        </select>
-                    </div>
-                </div> -->
+
         
             <label for="" class="title">* 시간</label>
             <div style="margin-bottom: 15px;" class="row g-3 list">
@@ -615,8 +583,11 @@
             
             
             <a>
-                <input type="submit" class="btn submit" type="submit"  value="프로젝트 등록" onclick="registrationYN()" id="reg">
-            </a>
+                <input type="submit" class="btn submit" type="submit"  value="프로젝트 등록" 
+					   onclick="registrationYN()" id="reg">
+				 <a href="/recommenduser/{{data[1].direct_name}}/" class="more" ><b>더보기</b></a>
+            
+			</a>
          
         </form>
 

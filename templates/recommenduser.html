@@ -329,19 +329,7 @@
                 </li>
              
             </ul>
-            
-             <!-- {% if session['id']%}
-        <div class="user">
-            <img src="https://i.ibb.co/4NJ6F0t/user.png" alt="user" border="0">
-            <p>{{session['id']}}</p>
-        </div>
-            {% else%}
-  
-        {% endif %}
-            
-        {% if session['id'] %}
-            <button type="button" onclick="location.href = '/logout'" style="float: right; border-radius:10px">&nbsp로그아웃&nbsp</button>
-            {% endif %}  -->
+   
      </div>
 
     </header>
@@ -395,6 +383,7 @@
         <p>프로젝트를 함께 진행하고 싶은 팀원을 클릭해서 메시지를 보내보세요!</p>
     </div>
         
+	 {% if session['id']%}
     <div class="container">
 		{% for data in datas %}
      
@@ -407,39 +396,21 @@
                      <input class="btn" type="submit"  value="더보기" a href="./userdetail1"  id="reg">
                 </a>
             </div>
-            <!-- <div class="user">
-                <div class="user_image"></div>
-                <h1 class="user_name">'alisha' 님</h1>
-                <p class="user_position">#백엔드 #Flask</p>
-                <a href="./userdetail2" style="text-decoration:none">
-                     <input class="btn" type="submit"  value="더보기" a href="./userdetail2"  id="reg">
-                </a>
-            </div>
-            <div class="user">
-                <div class="user_image"></div>
-                <h1 class="user_name">'hyewon1203' 님</h1>
-                <p class="user_position">#AI #머신러닝</p>
-                <a href="./userdetail3" style="text-decoration:none">
-                     <input class="btn" type="submit"  value="더보기" a href="./userdetail3"  id="reg">
-                </a>
-            </div>
-            <div class="user">
-                <div class="user_image"></div>
-                <h1 class="user_name">'cine3696' 님</h1>
-                <p class="user_position">#디자이너 #어도비</p>
-                <a href="./userdetail4" style="text-decoration:none">
-                     <input class="btn" type="submit"  value="더보기" a href="./userdetail4"  id="reg">
-                </a>
-            </div> -->
-            <!-- <div class="user">
-                <img class="user_image">유저이미지</img>
-                <h1>유저이름</h1>
-                <p>유저포지션</p>
-                <button class="btn">더보기</button>
-            </div> -->
 
         </div>
+		{% endif %}
     </div>
+	
+	
+	<div>
+        {% else %}
+        <p style="float:center">[]</p><br>
+        {% endif %}
+		
+        {% else%}
+            <a href="/sign-in"> <p>[로그인을 해주세요]</p></a><br>
+        {% endif %}
+        </div>
 
 
     <section class="footer">

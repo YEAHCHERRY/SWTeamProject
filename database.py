@@ -166,7 +166,7 @@ class DBhandler:
         return post_lists
     
 
-    
+    #프로젝트 상세사항
     def get_detail_byproname(self, pro_name):
         projects=self.db.child("project").get()
         target_value=""
@@ -178,8 +178,9 @@ class DBhandler:
                 target_value=value
         return target_value
     
+    #프로젝트 생성시 matching된 것 보여주기
     def matching_byname(self, direct_name):
-        matchings=self.db.child("matching").get()
+        matchings=self.db.child("user").get()
         target_value=[]
         
         for match in matchings.each():
@@ -191,6 +192,8 @@ class DBhandler:
                  
                 
         return target_value
+    
+    
 
     def get_post_list(self):
         post_list= self.db.child("project").get().val()
