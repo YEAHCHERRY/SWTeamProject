@@ -1,6 +1,6 @@
 
 # SWTeamProject
-IT side project를 위한 팀 매칭 서비스
+IT side project를 위한 팀 매칭 서비스: SIDE:)AFFECT
 
 <br>
 
