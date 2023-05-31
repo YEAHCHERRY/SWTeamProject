@@ -12,6 +12,10 @@ IT side project를 위한 팀 매칭 서비스: SIDE:)AFFECT
  ### 디자인 리소스
  - Icon : Google Material Icons
  - UI 디자인 시안 : Adobe XD
+ ### 화면 구현
+ 
+
+
 ## 📍 Backend
 -> Python Flask 이용
 ->DATABASE: Firebase- realtime database
