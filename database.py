@@ -180,46 +180,24 @@ class DBhandler:
     
     def matching_byname(self, direct_name):
         matchings=self.db.child("matching").get()
-        target_value=""
+        target_value=[]
         
         for match in matchings.each():
-            value = match.val()
+            user_unikey = match.key()
+            user_info = match.val()
                 
-            if value['direct_name'] == direct_name:
+            if value['direct_name'] == id:
                 target_value=value
+                 
+                
         return target_value
-
-    
 
     def get_post_list(self):
         post_list= self.db.child("project").get().val()
-        print("get_psot함수값")
+        print("get_post함수값")
         return post_list
 
-        
-    
-    # def get_project_info(direct_name):
-    # ref = db.reference("project").child(direct_name)
-    # project_info = ref.get()
-    # return project_info
 
-    
-    # def get_projects(self):
-        
-    #     pro_detail=self.db.child("project").get().val()
-    #     print("내용")
-    #     return pro_detail
-    
-    # def get_projects_byname(self,pro_name):
-    #         pro_detail=self.db.child("project").get()
-    #         target_value=""
-    #         for proj in project.each():
-    #             value=proj.val()
-                
-    #             if value['pro_name']==pro_name:
-    #                 target_value=value
-    #         return target_value
-             
             
             
             
