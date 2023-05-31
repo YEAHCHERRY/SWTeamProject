@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Affect</title>
+
+    <!-- 스타일 초기화 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Jua&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+
+     <!-- Google Material Icons -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+     <!-- css연결 -->
+ 
+     <!-- swiper cdn, 주의할 점은 css파일도 필요함 -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+    <!-- js 연결 -->
+    <script defer src="/js/main.js"></script>
+    <style>
+        body {
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+        .inner {
+            /* 가운데정렬 */
+            width: 1100px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .btn {
+            width: 130px;
+            padding: 10px;
+            border: 2px solid #333;
+            border-radius: 4px;
+            color: #333;
+            font-size: 16px;
+            font-weight: 700;
+            text-align: center;
+            cursor: pointer;
+            box-sizing: border-box;
+            display: block;
+            transition: .4s;
+            background-color: rgba(255, 255, 255, .5);
+
+        }
+        .btn:hover{
+            background-color: #333;
+            color: #fff;
+        }
+        .btn.btn--brown {
+            color: #592B18;
+            border-color: #592B18;
+        }
+        .btn.btn--brown:hover{
+            color: #fff;
+            background-color: #592B18;
+
+        }
+
+
+        /* HEADER */
+        header {
+            background-color: #f6f5f0;
+            border-bottom: 1px solid #fffffff2;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            height: 120px;
+            z-index: 5;
+        }
+        header > .inner {
+            height: 120px;
+        }
+        header .logo {
+            position: absolute;
+            height: 50px;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto 0;
+        }
+        header .sub-menu {
+            display: flex;
+            position: absolute;
+            top: 15px;
+            right: 0;
+            margin-right: 10px;
+        }
+        header .sub-menu .menu {
+            display: flex;
+            /* font-family: Arial, sans-serif; */
+            /* position: absolute;
+            top: 24px;
+            right: 35px;
+            */
+        }
+        header .sub-menu .menu li{
+            margin-right: 13x;
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header .sub-menu .menu li a{
+            font-size: 12px;
+            padding: 11px 16px;
+            display: block;
+            color: #656565;
+            text-decoration: none;
+        }
+        header .sub-menu .menu li a:hover{
+            color: #000;
+        }
+
+        header .sub-menu .search {
+            height: 34px;
+            position: relative;
+        }
+        header .sub-menu .search input {
+            width: 36px;
+            height: 34px;
+            padding: 4px 10px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            border-radius: 5px;
+            outline: none;
+            background-color: #fff;
+            color: #000;
+            font-size: 12px;
+            transition: width .4s;
+        }
+        header .sub-menu .search input:focus {
+            width: 190px;
+            border-color: #690;
+        }
+        header .sub-menu .search .material-icons {
+            height: 24px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 5px;
+            margin: auto;
+
+
+        }
+        header .main-menu {
+            display: flex;
+            position: absolute;
+            right: -10px;
+            top: 50px;
+        }
+        header .main-menu li {
+            padding: 16px 12px;
+
+        }
+        header .main-menu li a {
+            font-size:20px;
+            color: #656565;
+            text-decoration: none;
+            margin-right: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        header .main-menu li a:hover {
+            color: #690;
+        }
+        header  a.btn {
+            width: 83px;
+            padding: 8px;
+            border: 2px solid #656565;
+            border-radius: 4px;
+            font-size: 15px;
+            font-weight: 700;
+            color: #656565;
+            text-decoration: none;
+            text-align: center;
+            position: absolute;
+            right: 0;
+            top: 39px;
+            background-color: #fffffff2;
+
+        }
+
+        .visual {
+            margin-top: 120px;
+            height: 630px;
+        }
+        .visual .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .visual .swiper .swiper-button-prev {
+            color: rgba(255, 255, 255, .5);
+        }
+        .visual .swiper .swiper-button-next {
+            color: rgba(255, 255, 255, .5);
+        }
+        .visual .swiper .swiper-pagination {
+            bottom: 40px;
+        }
+        .visual .swiper .swiper-pagination .swiper-pagination-bullet {
+            background-color: #000;
+            width: 12px;
+            height: 12px;
+            margin-right: 6px;
+            outline: none;
+        }
+        .visual .swiper .swiper-pagination .swiper-pagination-bullet-active {
+        background-color: rgba(255, 255, 255, .3);
+        }
+        .visual .swiper .swiper-wrapper .swiper-slide {
+            position: relative;
+            width: 100%;
+            height: 630px;
+        }
+
+        .visual .swiper .swiper-wrapper .swiper-slide .text {
+            position: absolute;
+            left: 200px;
+            top: 0;
+            bottom: 0;
+            height: 300px;
+            margin: auto;
+        }
+
+        .visual .swiper .swiper-wrapper .swiper-slide .material-icons {
+            font-size: 14px;
+            color: #fff;
+        }
+        .visual .swiper .swiper-wrapper .swiper-slide .text h4 {
+            color: #fff;
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+        .visual .swiper .swiper-wrapper .swiper-slide .text .h4 {
+            margin-bottom: 30px;
+        }
+
+        .visual .swiper .swiper-wrapper .swiper-slide .text .p {
+            color: #fff;
+            font-size: 15px;
+            display: flex;
+            margin-bottom: 20px;
+            
+
+        }
+        .visual .swiper .swiper-wrapper .swiper-slide .text .btn-group {
+            display: flex;
+            padding: 15px;
+            
+        }
+        .visual .swiper .swiper-wrapper .swiper-slide .text .btn-group .btn {
+            margin-right: 10px;
+            padding: 10px;
+        }
+        .visual .swiper .swiper-wrapper .swiper-slide .text .btn-group .btn.btn--brown {
+            width: 200px;
+        }
+
+        .introduce {
+            height: 750px;
+            border-bottom: 1px solid #656565;
+        }
+
+        .introduce .text {
+            position: relative;
+        }
+        .introduce .text > h4 {
+            position: absolute;
+            top: 110px;
+            left: 320px;
+            font-size: 30px;
+            font-family: 'Jua', sans-serif;
+        }
+        .introduce .text .btn {
+            width: 300px;
+            position: absolute;
+            top: 650px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+
+        .introduce .why{
+            display: flex;
+            position: absolute;
+            top: 220px;
+            width: 1095px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        
+        }
+        .introduce .why li {
+            width: 335px;
+            height: 360px;
+            background-color: antiquewhite;
+            margin-right: 30px;
+            position: relative;
+            border: 1px solid #656565;
+            border-radius: 10px;
+
+        }
+        .introduce .why li img {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            top:30px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+        .introduce .why li h4 {
+            position: absolute;
+            top: 210px;
+            font-size: 20px;
+            font-weight: 900;
+            font-family: 'Arial';
+            width: 100%;
+            text-align: center;
+            color: #690;
+        }
+        .introduce .why li p{
+            font-size: 16px;
+            line-height: 160%;
+            width: 230px;
+            position: absolute;
+            left: 63px;
+            text-align: center;
+            top: 250px;
+            font-weight: 600;
+            color: #656565;
+
+        }
+        .content .inner {
+            height: 800px;
+        }
+        .content h4 {
+            position: absolute;
+            top: 100px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 200px;
+            color: #000;
+            font-size: 30px;
+            font-family: 'Jua', sans-serif;
+        }
+        .content .project {
+            display: flex;
+            position: absolute;
+            top: 200px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 1000px;
+        }
+        .content .project .item{
+            width: 220px;
+            height: 330px;
+            background-color: orange;
+            margin-right: 30px;
+        }
+        .footer {
+            border-top: 1px solid #ccc;
+            position: relative;
+            background-color: #272727;
+        }
+        .footer .inner {
+            padding: 40px 0 60px 0;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            left: 150px;
+        }
+        .footer h1 {
+            font-weight: 800;
+            font-size: 23px;
+            font-family: 'Gugi';
+            margin-bottom: 5px;
+        }
+        .footer p {
+            font-size: 14px;
+            margin-bottom: 20px;
+            color: #656565;
+            font-weight: 700;
+        }
+        .footer .menu {
+            display: flex;
+            margin-bottom: 18px;
+            
+        }
+        .footer .menu li a{
+            margin-right: 15px;
+            font-size: 14px;
+            color: #000;
+            font-weight: 900;
+            text-decoration-line: none;
+        }
+
+        .footer .name li:first-child {
+            margin-bottom: 5px;
+        }
+        .footer .name li {
+            color: #656565;
+            font-size:14px;
+            font-weight: 700;
+        }
+        .signin {
+            margin-top: 120px;
+            padding: 100px 0 150px;
+            background-image: url('https://proxy.goorm.io/service/63f4778f714461ebde4f616b_dlDnKi4ie02yXT3PDrp.run.goorm.io/9080/file/load/background.jpg?path=d29ya3NwYWNlJTJGeWVhaGNoZXJyeSUyRnRlbXBsYXRlcyUyRmJhY2tncm91bmQuanBn&docker_id=dlDnKi4ie02yXT3PDrp&secure_session_id=WayrNU6N9KM6mx5kEolqigns8T-6ud3I'); 
+            background-size: cover;
+
+
+        }
+        .signin h1 {
+            color: #fff;
+            font-size: 30px;
+            
+            text-align: center;
+            margin-bottom: 24px;
+            font-family: 'Gugi';
+        }
+        .signin__card {
+            width: 500px;
+            margin: 0 auto;
+            border-radius: 6px;
+            background-color: #F6F5F0;
+            box-shadow: 2px 2px 20px rgba(0, 0, 0, .3);
+            color: #555;
+
+        }
+        .signin__card h2 {
+            padding: 30px;
+            font-size: 18px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+            font-family: 'Gugi';
+        }
+        .signin__card h2 strong {
+            font-weight: 800;
+            color: #063;
+        }
+        .signin__card form {
+            padding: 30px 22px;
+        }
+        .signin__card form h3 {
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .signin__card form input {
+            width: 100%;
+            margin-bottom: 12px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            outline: none;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        .signin__card form .last {
+            margin-bottom: 25px;
+        }
+        /* 속성선택자 */
+        .signin__card form .submit {
+            background-color: rgba(251, 234, 162, 0.9);
+            /* border: 1px solid rgba(186, 174, 117, 0.9); */
+            color: #9f8a119c;
+            font-size: 20px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        .signin__card form p {
+            font-size: 12px;
+            color: #272727;;
+            text-align: center;
+        }
+        .signin__card .actions {
+            display: flex;
+            border-top: 1px solid #ddd;
+        }
+        .signin__card .actions a {
+            flex-grow: 1;
+            flex-basis: 0;
+            text-align: center;
+            padding: 20px;
+            color: #555;
+            font-size: 14px;
+            border-right: 1px solid #ddd;
+            text-decoration: none;
+
+        }
+        .signin__card .actions a:last-child {
+            border-right: none;
+        }
+        .signin__card .actions a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="inner">
+
+            <a href="/" class="logo">
+                <img src="https://blog.kakaocdn.net/dn/bMcSCm/btsgnXHrIEp/KcKSB4NAqcHNkJObaHGFDK/img.png" alt="">
+            </a>
+
+            <div class="sub-menu">
+                <ul class="menu">
+                    <li>
+                        <a href="sign-in">Sign In</a>
+                    </li>
+                    
+                </ul>
+                <div class="search">
+                    <input type="text" >
+                    <div class="material-icons">search</div>
+                </div>
+            </div>
+
+            <ul class="main-menu">
+                <!-- <li>
+                    <a href="instructor_create_course">NEW PROJECT</a>
+                </li>
+                <li>
+                   <a href="#">ABOUT</a> 
+                </li>
+                <li>
+                    <a href="#">CONTACT</a>
+                </li> -->
+                 <li>
+                    <a href="newproject">프로젝트 등록</a>
+                </li>
+                <li>
+                   <a href="uploadpdf">이력서 등록</a> 
+                </li>
+                <li>
+                    <a href="uploadpdf">ABOUT</a>
+                </li>
+            </ul>
+
+        </div>
+    </header>
+    
+
+    <section class="signin">
+        <h1>로그인</h1>
+        <div class="signin__card">
+            <h2><strong>Welcome!&nbsp;&nbsp;</strong>사이드어펙트에 오신 것을 환영합니다.</h2>
+           <form method="post" action="/login_confirm" id="login-done">
+                <h3>ID</h3><input type="text" name="id" placeholder="아이디를 입력하세요">
+                <h3>PASSWORD</h3><input type="password" name="pw" placeholder="비밀번호를 입력하세요" class="last">
+                <input type="submit" value="Login" />
+                <p>
+                    * 비밀번호를 타 사이트와 같이 사용할 경우 도용 위험이 있으니, <br>
+                    정기적으로 비밀번호를 변경하세요!
+                </p>
+
+            </form>
+
+            
+            <div class="actions">
+                <a href="sign-up">회원가입</a>
+                <a href="#">아이디 찾기 </a>
+                <a href="#">비밀번호 찾기</a>
+            </div>
+        </div>
+    </section>
+
+
+<body>
+    
+</body>
+</html>
