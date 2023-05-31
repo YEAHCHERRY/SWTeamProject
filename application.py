@@ -100,7 +100,7 @@ def create_course():
         # DB.search_push_user(direct_name, m3)
         # DB.search_push_user(direct_name, m4)
         # return render_template("index.html",data=data)
-        return render_template("recommenduser.html",data=data)
+        return render_template("recommenduser1.html",data=data)
     
 
 #회원가입
@@ -157,10 +157,6 @@ def list_restaurants():
     
      return render_template("post_list.html",datas=data.items())   
       
-# @application.route("/newpdf_register",methods=['POST'])
-# def newpdf_register():
-#     print("되고있나요")
-#     return render_template("index.html")
 
     
  #더보기 후 나오는 project list
