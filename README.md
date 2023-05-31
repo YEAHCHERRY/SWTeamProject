@@ -22,11 +22,13 @@ IT side project를 위한 팀 매칭 서비스: SIDE:)AFFECT
 
 
 
-## 📍 Backend
+
 ## 📍 Backend
 
- **Python Flask 이용
- DATABASE: Firebase- Realtime database**
+ **Python Flask 이용**
+ 
+ 
+ **DATABASE: Firebase- Realtime database**
 
 주요기능:
 
