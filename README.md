@@ -14,6 +14,7 @@ IT side project를 위한 팀 매칭 서비스: SIDE:)AFFECT
  - UI 디자인 시안 : Adobe XD
  ### 화면 구현
  - 메인화면
+ <img src="https://img1.daumcdn.net/thumb/R1280x0/scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F0RDKC%2FbtsiadvaypA%2FPNrN7SO0hSdFYgcXogHXsk%2Fimg.png" width="800" height="500" />
  ![image](https://github.com/YEAHCHERRY/SWTeamProject/assets/114209093/16ae5019-5cd4-4544-b9fa-cd2256b2063d)
  - 로그인 / 회원가입
  ![image](https://github.com/YEAHCHERRY/SWTeamProject/assets/114209093/4c21cc18-4f3d-4501-a5a2-91a947a2f591)
