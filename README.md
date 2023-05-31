@@ -5,7 +5,8 @@
 IT side project를 위한 팀 매칭 서비스  
 <br></br>
 ## 📍Front-End
-
+- 메인화면
+![image](https://github.com/YEAHCHERRY/SWTeamProject/assets/114209093/593b694b-85a6-40a4-b8f7-5fc888ad1115)
 
 
 <br></br>
